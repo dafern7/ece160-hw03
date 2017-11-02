@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
  int n = argc; //number of arguments to be parsed
  int x = atoi(argv[1]); //first argument is the Mode
  int i = 0;
-for (i = 2; i<n+1; i+=4) { //populating the structs, increment i by 4 because each struct has four components
+for (i = 2; i<n; i+=4) { //populating the structs, increment i by 4 because each struct has four components
    Student s;
    s.first_name = argv[i];
    s.last_name = argv[i+1];
